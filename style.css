@@ -1,0 +1,101 @@
+:root {
+  --bright-orange: #e38826;
+  --dark-cyan: #006970;
+  --very-dark-cyan: #004241;
+  --white: #fff;
+  --very-light-gray: #ece8e8;
+}
+
+* {
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to right, #004241, #41d3dd, #004241);
+  font-family: 'Big Shoulders Display', 'Lexend Deca', sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1125px;
+  padding: 40px;
+}
+
+.container .card {
+  padding: 50px;
+}
+
+.container .card h1 {
+  color: var(--white);
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.container .card p {
+  color: var(--very-light-gray);
+  font-family: 'Lexend Deca';
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 120px;
+}
+
+.container .card button {
+  border-radius: 50px;
+  width: 60%;
+  padding: 16px;
+  border: none;
+  font-size: 16px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.container .card button:hover {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+  box-shadow: none;
+}
+
+.container .card button:active {
+  transform: translateY(10px);
+}
+
+.container .sedans {
+  background: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.container .sedans button {
+  color: var(--bright-orange);
+}
+
+.container .suvs {
+  background: var(--dark-cyan);
+}
+
+.container .suvs button {
+  color: var(--dark-cyan);
+}
+
+.container .luxury {
+  background: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+.container .luxury button {
+  color: var(--very-dark-cyan);
+}
